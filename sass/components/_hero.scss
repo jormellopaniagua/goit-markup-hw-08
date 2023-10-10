@@ -1,0 +1,25 @@
+.hero {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(255, 255, 255, 0)),
+    url(../images/heroImage.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  object-fit: cover;
+
+  &__title {
+    color: white;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    align-self: center;
+  }
+}
+.hero--padding {
+  padding-top: 179px;
+  padding-bottom: 179px;
+}

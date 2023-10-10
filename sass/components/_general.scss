@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  color: $text-color;
+  background-color: $main-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.ghost {
+  display: none;
+}
+.link {
+  text-decoration: none;
+  transition: $trans;
+  &:hover {
+    color: $webstudio-color;
+  }
+  &:focus {
+    color: $webstudio-color;
+  }
+  &:hover .header__icon {
+    fill: $webstudio-color;
+  }
+  &:focus .header__icon {
+    fill: $webstudio-color;
+  }
+}
+.list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.genericTitle {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.button {
+  background-color: $webstudio-color;
+  color: $main-color;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px, rgba(0, 0, 0, 15);
+  align-self: center;
+  padding: 10px 20px;
+}
+.button--hero {
+  @extend .button;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 1200px;
+  align-self: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.p-0 {
+  padding: 0%;
+}
+.gap {
+  gap: 50px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.card_set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.worker__icon {
+  width: 20px;
+  height: 20px;
+  fill: $icon-color;
+  transition: $trans-icon;
+}
